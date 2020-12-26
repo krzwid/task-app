@@ -1,0 +1,35 @@
+#add-panel-box {
+    color: rgb(8, 8, 10);
+    text-align: center;
+    width: 200px;
+    background-color: gray;
+    position: absolute;
+    right: 0px;
+    top: 50vh;
+}
+
+/* .add-title {
+
+}
+
+.category-add {
+
+}
+
+.description-add {
+
+}
+
+.deadline-add {
+
+} */
+
+.add-button {
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 25px;
+        color: rgb(223, 240, 240);
+        border: solid 1px black;
+        background-color: darkgreen;
+}

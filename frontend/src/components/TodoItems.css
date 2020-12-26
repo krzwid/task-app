@@ -1,0 +1,52 @@
+.todo-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "description description description . . ."
+      "category deadline . . done-button delete-button";
+  }
+  
+  .description { grid-area: description; }
+  
+  .category { grid-area: category; }
+  
+  .deadline { grid-area: deadline; }
+  
+  .done-button { grid-area: done-button; }
+  
+  .delete-button { grid-area: delete-button; }
+
+  
+.app-title {
+    font-size: 40px;
+}
+
+.todo-element {
+    background-color: rgb(89,182,91);
+    color: black;
+    padding: 1px 0 10px 1%;
+    margin-bottom: 10px;
+    border-bottom: solid black 1px;
+}
+
+.button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    color: rgb(223, 240, 240);
+    width: 50%;
+    border: solid 1px black;
+    
+}
+
+ .delete-button {
+     background-color: red;
+}
+
+.done-button {
+    background-color: darkgreen;
+
+}
