@@ -27,7 +27,8 @@ import './TodoItems.css';
   }
 
    doneTask(todoID) {
-     console.log('To implement')
+    document.getElementById(todoID).classList.remove("not-done-task");
+    document.getElementById(todoID).classList.add("done-task");
    }
 
    state = { 
@@ -39,7 +40,7 @@ import './TodoItems.css';
         <div>
           <center><h1 className="app-title">TODO List</h1></center>
           {this.state.todoitems.map((todoitem) => (
-            <div className="todo-element" key={todoitem.id}>
+            <div className="todo-element not-done-task" key={todoitem.id} id={todoitem.id}>
                 <h3 className="category">Category: {todoitem.category}</h3>
                 <h3 className="description">{todoitem.description}</h3>
                 <h3 className="deadline">Deadline: {todoitem.deadline}</h3>

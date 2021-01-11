@@ -24,11 +24,18 @@
 }
 
 .todo-element {
-    background-color: rgb(89,182,91);
     color: black;
     padding: 1px 0 10px 1%;
     margin-bottom: 10px;
     border-bottom: solid black 1px;
+}
+
+.not-done-task {
+    background-color: rgb(89,182,91);
+}
+
+.done-task {
+    background-color: rgb(56, 54, 54);
 }
 
 .button {
@@ -39,7 +46,6 @@
     color: rgb(223, 240, 240);
     width: 50%;
     border: solid 1px black;
-    
 }
 
  .delete-button {
@@ -48,5 +54,4 @@
 
 .done-button {
     background-color: darkgreen;
-
 }

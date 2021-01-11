@@ -1,28 +1,75 @@
 #add-panel-box {
-    color: rgb(8, 8, 10);
+    color: rgb(255, 255, 255);
     text-align: center;
+    width: 250px;
+    background-color: rgb(52, 65, 53);
+    position: fixed;
+    top: 30vh;
+    border-radius: 30% 0% 0% 30%;
+}
+
+.visible-add-panel {
+    right: 0;
+}
+
+.hidden-add-panel {
+    right: -250px;
+}
+
+.add-title {
+    font-size: 30px;
+}
+
+.input-add {
+    margin-bottom: 10px;
     width: 200px;
-    background-color: gray;
+    background-color: rgb(40, 46, 41);
+    color: white;
+}
+
+.input-add::placeholder {
+    color: white;
+    padding-left: 3px;
+    font-size: 15px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    margin-right: 15px;
+    font-size: 20px;
+    filter: invert(0.8);
+  }
+
+.plus-button {
+    font-size: 45px;
+    width: 72px;
+    height: 72px;
+    border-radius:100%;
     position: absolute;
-    right: 0px;
-    top: 50vh;
+    top: 50%;
+    left: -80px;
+    background-color: red;
 }
 
-/* .add-title {
-
+.plus-button:hover {
+    cursor: pointer;
 }
 
-.category-add {
+ .category-add {
+    height: 50px;
 
-}
+} 
 
 .description-add {
+    height: 60px;
 
 }
 
 .deadline-add {
-
-} */
+    height: 50px;
+} 
 
 .add-button {
         font-size: 20px;
